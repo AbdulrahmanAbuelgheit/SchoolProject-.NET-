@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to SchoolProject</h1>
+    <p class="lead">Your comprehensive solution for managing school operations effectively.</p>
+    <p>At SchoolProject, we aim to provide a seamless experience for managing students, teachers, courses, and more. Explore our features and see how we can help streamline your school's administrative tasks.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Students</h5>
+                    <p class="card-text">Keep track of student information and academic progress.</p>
+                    <a href="@Url.Action("Index", "Student")" class="btn btn-primary">View Students</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Organize Courses</h5>
+                    <p class="card-text">Easily manage course schedules, assignments, and grades.</p>
+                    <a href="@Url.Action("Index", "Course")" class="btn btn-primary">View Courses</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Teacher Profiles</h5>
+                    <p class="card-text">Access teacher profiles and manage their assignments.</p>
+                    <a href="@Url.Action("Index", "Teacher")" class="btn btn-primary">View Teachers</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">View Rooms</h5>
+                    <p class="card-text">Manage and view information about school rooms and facilities.</p>
+                    <a href="@Url.Action("Index", "Room")" class="btn btn-primary">View Rooms</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Register Student</h5>
+                    <p class="card-text">Register new students into the system with ease.</p>
+                    <a href="@Url.Action("Register", "Student")" class="btn btn-primary">Register Student</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

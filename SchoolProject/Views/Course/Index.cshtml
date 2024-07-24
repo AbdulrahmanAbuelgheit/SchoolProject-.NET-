@@ -1,0 +1,36 @@
+﻿@model List<Course>
+
+<a class="btn btn-primary" asp-area="" asp-controller="Course" asp-action="Create">Add New Course</a>
+
+<br />
+<table>
+    <tr>
+        <th>
+            Course Name
+        </th>
+        <th>
+            Course Capacity
+        </th>
+        
+       
+        <th>
+            Delete
+        </th>
+    </tr>
+    @foreach (Course course in Model)
+    {
+        <tr>
+            <td>
+                @course.CourseName
+            </td>
+            <td>
+                @course.CourseCapacity
+            </td>
+            
+            <td>
+                <a href="/Course/Delete/@course.CourseId">Delete @course.CourseName Course</a>
+            </td>
+        </tr>
+    }
+</table>
+
